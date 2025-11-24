@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slither Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-screen">
+        <div class="login-box">
+            <h1>Slither Clone</h1>
+            <input type="text" id="username" placeholder="Nickname" maxlength="10">
+            <input type="text" id="room-code" placeholder="Room Code (e.g. 1)" value="1">
+            <button id="play-btn">Play</button>
+        </div>
+    </div>
+    <canvas id="game-canvas"></canvas>
+    <div id="ui-layer">
+        <div id="score-board">Score: 0</div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
